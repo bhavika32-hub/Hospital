@@ -205,14 +205,23 @@ The dashboard tracks:
 
 ## Risk Analysis Insights
 
-- High-risk patients are predominantly concentrated in the 60–80 age group.
-- Low-risk patients are primarily observed between the 20–40 age range.
+- High-risk patients are predominantly concentrated in the 71–80 age group, followed by the 61–70 age group.
+- Low-risk patients are least represented in the 71–80 and 61–70 age groups.
 - Risk severity increases with patient age.
 - ICU patients have a higher average risk score compared to other wards.
 - Approximately 35% of ICU patients belong to the High-Risk category.
 - Blood group B+ shows the highest concentration of High-Risk patients.
 - ICU admissions are also dominated by B+ blood group patients.
 - High-risk patients generally experience longer hospitalization durations.
+
+---
+
+## Blood Group Insights
+
+- B+ records the highest patient volume across all risk categories.
+- B+ also contributes the largest share of High-Risk patients.
+- O+ records the second-highest patient count across risk categories.
+- Blood group distribution remains relatively consistent across Low, Medium, and High-Risk categories.
 
 ---
 
@@ -224,7 +233,6 @@ The dashboard tracks:
 - ICU records the highest concentration of Extended Stay patients.
 - Short-stay admissions are minimal in ICU.
 - ICU handles fewer patients but significantly higher clinical severity.
-- Approximately 35% of ICU patients belong to the High-Risk category.
 
 ---
 
@@ -232,8 +240,12 @@ The dashboard tracks:
 
 - General Ward records the highest number of high wait-time cases (1,975 patients).
 - ICU contributes comparatively fewer high wait-time cases (371 patients).
-- High wait-time cases are concentrated primarily in General Ward operations.
-- Operational delays are more visible in high-volume wards than in critical-care wards.
+- Patients under the "None" referral category account for the highest number of High Wait-Time cases.
+- General Practice records the second-highest concentration of High Wait-Time patients.
+- Medium-Risk patients contribute the highest number of High Wait-Time cases (2,136 patients).
+- High-Risk patients contribute 1,195 High Wait-Time cases.
+- Approximately 87% of High-Risk patients fall into the High Wait-Time category.
+- Approximately 57% of Medium-Risk patients fall into the High Wait-Time category.
 
 ---
 
@@ -243,6 +255,9 @@ The dashboard tracks:
 - Extended Stay patients form the second-largest hospitalization segment.
 - Critical Long-Stay patients remain limited in count but require significant hospital resources.
 - ICU contributes disproportionately to prolonged hospitalization cases.
+- Approximately 50% of High-Risk patients belong to the Extended Stay category.
+- Only 17% of Medium-Risk patients belong to the Extended Stay category.
+- Around 56% of Medium-Risk patients fall under the Normal Stay category.
 - A relatively small group of patients accounts for a large share of hospital occupancy.
 
 ---
@@ -254,7 +269,7 @@ The dashboard tracks:
 - Handles the largest patient population.
 - Records the highest operational workload.
 - Manages the largest share of Normal Stay patients.
-- Also records the highest number of high wait-time cases.
+- Also records the highest number of High Wait-Time cases.
 
 ### ICU
 
@@ -271,7 +286,10 @@ The dashboard tracks:
 
 ## Department-Level Insights
 
-- Patients without a specified referral department ("None") account for the highest concentration of Extended Stay and Critical Long-Stay cases.
+- Patients without a specified referral department ("None") account for the highest concentration of High-Risk patients.
+- General Practice records the second-highest concentration of High-Risk patients.
+- General Practice contributes significantly to ICU admissions.
+- Patients without a referral department account for the highest concentration of Extended Stay and Critical Long-Stay cases.
 - General Practice contributes significantly to prolonged hospitalization cases.
 - Orthopedics demonstrates moderate long-duration recovery cycles.
 - Cardiology records slightly longer treatment durations.
@@ -291,25 +309,56 @@ The dashboard tracks:
 
 # Interconnected Insights
 
-### Age and Risk Relationship
+### Age Drives Risk and Hospital Resource Consumption
 
-The analysis shows a clear relationship between age and patient risk. As patient age increases, the concentration of high-risk cases also increases. Senior patients contribute significantly to ICU admissions and longer hospital stays.
+Patients aged 71–80 and 61–70 dominate both High-Risk and Medium-Risk categories. These age groups are more likely to require ICU care, experience longer hospital stays, and consume more healthcare resources.
+
+---
+
+### High-Risk Patients Create Multiple Operational Challenges
+
+High-Risk patients not only require more clinical attention but also stay longer in the hospital.
+
+- 50% of High-Risk patients fall under Extended Stay.
+- 87% of High-Risk patients fall under High Wait-Time.
+
+This indicates that High-Risk patients contribute simultaneously to clinical workload, bed occupancy, and operational delays.
+
+---
 
 ### ICU Burden Comes from Severity, Not Volume
 
-Although ICU accounts for only 10% of total admissions, it contains a much higher proportion of High-Risk and Extended Stay patients. This indicates that ICU workload is driven by patient severity rather than admission volume.
+Although ICU accounts for only 10% of total admissions, it contains a much higher concentration of High-Risk and Extended Stay patients.
 
-### General Ward Faces the Largest Operational Pressure
+- 35% of ICU patients are High Risk.
+- Average ICU stay is 10 days.
+- 66% of ICU patients belong to the Extended Stay category.
 
-General Ward handles the largest number of patients and records the highest number of high wait-time cases. This suggests that operational pressure is primarily driven by patient volume.
+This shows that ICU pressure is driven by patient severity rather than patient volume.
 
-### Extended Stay Patients Consume More Resources
+---
 
-While most patients fall under Normal Stay, a relatively small group of Extended Stay and Critical Long-Stay patients contributes significantly to bed occupancy and resource utilization.
+### Operational Pressure Is Concentrated in Specific Referral Groups
 
-### Referral Process May Need Attention
+Patients under the "None" referral category and General Practice consistently appear across:
 
-Patients with no specified referral department show the highest concentration of Extended Stay and Critical Long-Stay cases. This may indicate referral-management inefficiencies or data-quality issues.
+- High-Risk cases
+- ICU admissions
+- Extended Stay patients
+- High Wait-Time cases
+
+This indicates that a large share of hospital workload is concentrated within a limited number of referral pathways.
+
+---
+
+### Extended Stay Is Strongly Linked to Risk Severity
+
+Length-of-stay patterns show a clear relationship between patient risk and hospitalization duration.
+
+- 50% of High-Risk patients belong to Extended Stay.
+- Only 17% of Medium-Risk patients belong to Extended Stay.
+
+As risk severity increases, hospitalization duration also increases significantly.
 
 ---
 
@@ -317,9 +366,9 @@ Patients with no specified referral department show the highest concentration of
 
 ## 1. Improve ICU Resource Planning
 
-- Monitor Extended Stay patients more closely
-- Improve ICU bed allocation planning
-- Track prolonged-care cases proactively
+- Monitor Extended Stay patients more closely.
+- Improve ICU bed allocation planning.
+- Track prolonged-care cases proactively.
 
 **Reason:** ICU patients stay longer and consume a larger share of hospital resources.
 
@@ -327,9 +376,9 @@ Patients with no specified referral department show the highest concentration of
 
 ## 2. Reduce General Ward Congestion
 
-- Improve patient-flow management
-- Optimize staffing during busy periods
-- Reduce operational delays in high-volume wards
+- Improve patient-flow management.
+- Optimize staffing during busy periods.
+- Reduce operational delays in high-volume wards.
 
 **Reason:** General Ward experiences the highest patient volume and wait-time burden.
 
@@ -337,19 +386,19 @@ Patients with no specified referral department show the highest concentration of
 
 ## 3. Focus on Senior High-Risk Patients
 
-- Introduce early-risk identification programs
-- Monitor elderly patients more proactively
-- Prioritize preventive healthcare measures
+- Introduce early-risk identification programs.
+- Monitor elderly patients more proactively.
+- Prioritize preventive healthcare measures.
 
-**Reason:** Senior patients contribute heavily to ICU demand and prolonged hospitalization.
+**Reason:** Patients aged 61–80 contribute heavily to High-Risk cases, ICU admissions, and prolonged hospitalization.
 
 ---
 
 ## 4. Improve Extended Stay Management
 
-- Track prolonged-stay patients regularly
-- Strengthen discharge planning
-- Monitor long-duration occupancy trends
+- Track prolonged-stay patients regularly.
+- Strengthen discharge planning.
+- Monitor long-duration occupancy trends.
 
 **Reason:** A small number of patients occupy hospital resources for extended periods.
 
@@ -357,11 +406,21 @@ Patients with no specified referral department show the highest concentration of
 
 ## 5. Strengthen Referral Tracking
 
-- Improve referral documentation
-- Reduce unspecified referral classifications
-- Standardize patient-routing processes
+- Improve referral documentation.
+- Reduce unspecified referral classifications.
+- Standardize patient-routing processes.
 
-**Reason:** Unspecified referrals show the highest concentration of prolonged hospitalization cases.
+**Reason:** The "None" referral category contributes heavily to High-Risk, High Wait-Time, and Extended Stay cases.
+
+---
+
+## 6. High-Risk Patient Fast-Track Monitoring
+
+- Prioritize High-Risk patients during admission and assessment.
+- Create dedicated monitoring workflows.
+- Improve early intervention practices.
+
+**Reason:** 87% of High-Risk patients experience High Wait-Time and 50% belong to Extended Stay.
 
 ---
 
@@ -396,4 +455,4 @@ The dashboard provides a centralized view of hospital operations and supports da
 
 The analysis shows that hospital operations face two major challenges: managing high patient volume in the General Ward and handling prolonged-care cases in the ICU. While General Ward experiences the highest operational workload and wait-time pressure, ICU patients require significantly more care due to higher risk levels and longer hospital stays.
 
-The findings highlight opportunities to improve patient-flow management, ICU resource planning, referral tracking, and monitoring of high-risk patient groups to enhance overall hospital efficiency.
+The findings highlight opportunities to improve patient-flow management, ICU resource planning, referral tracking, and monitoring of high-risk patient groups to enhance overall hospital efficiency and healthcare delivery.
