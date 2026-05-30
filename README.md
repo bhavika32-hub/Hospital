@@ -4,327 +4,396 @@
 
 ## Problem Statement
 
-The objective of this project was to analyze hospital operational and patient management data to identify critical healthcare patterns, operational bottlenecks, patient risk trends, and hospitalization behavior. The analysis focuses on improving hospital resource utilization, patient flow efficiency, wait-time management, and critical-care operations through data-driven insights.
+The objective of this project was to analyze hospital operational and patient management data to identify patient risk patterns, hospitalization trends, ICU workload, operational bottlenecks, and patient-flow challenges. The analysis helps understand how hospital resources are utilized and where operational improvements can be made through data-driven decision-making.
 
 ---
 
 ## Business Objective
 
-The objective of this analysis is to understand hospital operational behavior and improve overall healthcare service efficiency using analytical insights. The focus areas include:
+The objective of this analysis is to understand hospital operations and improve healthcare service efficiency using analytical insights. The focus areas include:
 
-* Identifying high-risk patient groups and critical-care dependency patterns
-* Improving patient flow efficiency and reducing operational congestion
-* Analyzing wait-time pressure across wards and departments
-* Understanding hospitalization duration and extended-stay behavior
-* Optimizing ICU resource utilization and prolonged care management
-* Monitoring ward-level operational workload and patient distribution
-* Supporting healthcare decision-making through dynamic KPI reporting and operational analytics
+- Identifying high-risk patient groups
+- Understanding ICU workload and prolonged hospitalization patterns
+- Monitoring patient wait-time pressure
+- Analyzing hospitalization duration trends
+- Evaluating department-level performance
+- Understanding ward-level patient distribution
+- Supporting healthcare decision-making through dynamic reporting
+
+---
+
+## Dashboard Overview
+
+The dashboard was designed as an interactive healthcare analytics solution focused on patient admissions, risk analysis, hospitalization trends, operational performance, and patient satisfaction.
+
+### Dashboard Components
+
+### KPI Monitoring
+
+- Total Patients
+- Average Wait Time
+- Average Satisfaction Score
+- Admission Rate
+- Wait-Time Variability
+- Expected Admissions
+
+### Dashboard Analysis Sections
+
+- Monthly Admission Trend
+- Department-wise Patient Distribution
+- Gender Distribution
+- Hospitalization Duration by Department
+- Age Group Distribution
+- Risk Category Distribution
+- Length of Stay Distribution
+- Ward Type Distribution
+- Day-wise Admission Analysis
+- Department Bottleneck Analysis
+- Department Satisfaction Analysis
+- Admitted Patients by Age Group
+
+### Interactive Filters
+
+- Year Filter
+- Month Filter
+- Age Group Filter
 
 ---
 
 ## Tools Used
 
-* Microsoft Excel
-* Pivot Tables
-* Power Query
-* Excel Formulas
-* Dynamic KPI Reporting
-* Interactive Dashboarding
+- Microsoft Excel
+- Power Query
+- Pivot Tables
+- Excel Formulas
+- Interactive Dashboarding
 
 ---
 
 ## Dataset
 
-* 9K+ patient records
-* Data included:
+### Dataset Size
 
-  * Patient demographics
-  * Ward type
-  * Department referrals
-  * Risk score & risk category
-  * Length of stay
-  * Length of stay segments
-  * Patient wait time
-  * Wait-time categories
-  * Patient satisfaction
-  * Blood group
-  * Admission information
-  * Payment methods
+- 9K+ Patient Records
+
+### Dataset Includes
+
+- Patient ID
+- Admission Date
+- Month & Year
+- Day
+- Blood Type
+- Ward Type
+- Payment Method
+- Length of Stay
+- Patient Gender
+- Patient Age
+- Age Group
+- Department Referral
+- Patient Satisfaction Score
+- Patient Wait Time
+- Risk Score
+- Risk Category
+- Admission Status
 
 ---
 
 ## Custom Features & Data Engineering
 
-* Created custom **Risk Score** and **Risk Category** logic using Excel formulas
-* Built dynamic **Length of Stay Segments** for hospitalization analysis
-* Designed custom **Age Group classifications** for demographic segmentation
-* Created operational categories for patient wait-time analysis
-* Automated KPI calculations and dynamic reporting workflows
-* Structured healthcare operational data for interactive analysis
+To make the analysis more meaningful, several custom fields were created using Excel formulas.
+
+### Custom Columns Created
+
+#### Risk Score & Risk Category
+
+Created custom patient risk scoring logic and classified patients into:
+
+- High Risk
+- Medium Risk
+- Low Risk
+
+#### Age Group Segmentation
+
+Created custom age groups for demographic analysis.
+
+#### Length of Stay Segmentation
+
+Created hospitalization categories:
+
+- Short Stay
+- Normal Stay
+- Extended Stay
+- Long Stay
+- Critical Long Stay
+
+#### Wait-Time Classification
+
+Created wait-time categories for operational analysis.
+
+#### Dynamic KPI Calculations
+
+Built automated KPI calculations using Pivot Tables and Excel formulas.
 
 ---
 
 ## KPI Tracking
 
-* Total Patients Treated
-* Average Patient Wait Time
-* Patient Satisfaction Score
-* Admission Rate
-* Wait-Time Variability
-* Expected Admissions
-* Ward-Level Patient Distribution
-* Risk Category Distribution
-* Length of Stay Distribution
-* ICU Extended-Stay Contribution
+The dashboard tracks:
+
+- Total Patients
+- Average Wait Time
+- Average Satisfaction Score
+- Admission Rate
+- Wait-Time Variability
+- Expected Admissions
+- Risk Distribution
+- Ward Distribution
+- Length of Stay Distribution
 
 ---
 
 ## Key Analysis Performed
 
-* Analyzed patient risk distribution across age groups and wards
-* Evaluated ICU dependency and prolonged hospitalization behavior
-* Studied wait-time burden across ward types and operational workflows
-* Identified extended-stay and critical long-stay patient patterns
-* Compared hospitalization duration across departments and wards
-* Evaluated department-level operational pressure and referral behavior
-* Studied patient satisfaction trends across hospital departments
-* Performed demographic analysis using age, gender, race, and blood group distributions
-* Built dynamic Pivot Table reports and refreshable KPI dashboards
-* Automated healthcare operational reporting using Power Query transformations
+- Monthly Admission Trend Analysis
+- Department-wise Patient Distribution Analysis
+- Age Group Analysis
+- Risk Category Analysis
+- ICU Patient Severity Analysis
+- Length of Stay Analysis
+- Extended Stay & Critical Long-Stay Analysis
+- Ward-wise Patient Distribution Analysis
+- High Wait-Time Patient Analysis
+- Department Bottleneck Analysis
+- Patient Satisfaction Analysis
+- Gender Distribution Analysis
+- Blood Group Analysis
 
 ---
 
-## ⚡ Dashboard Automation Features
+## Dashboard Automation Features
 
-* Built dynamic Pivot Table and KPI reporting workflows
-* Used Power Query for automated data transformation and refresh
-* Dashboard updates dynamically when new healthcare data is added
-* Implemented slicers and filters for interactive operational reporting
-* Enabled dynamic analysis by Year, Month, and Age Group selections
-* Automated category segmentation using Excel formulas
+- Dynamic Pivot Tables
+- Interactive Slicers
+- Automated Reporting using Power Query
+- Refreshable KPI Dashboard
+- Year, Month, and Age Group Filters
+- Formula-Based Category Creation
 
 ---
 
 ## Dynamic Reporting Workflow
 
-* Raw patient data can be updated directly in the source sheet
-* Power Query automatically refreshes transformed healthcare data
-* Pivot Tables and KPIs update dynamically after refresh
-* Dashboard visuals reflect updated operational and patient insights automatically
-* Interactive slicers enable dynamic operational analysis
+1. Raw patient data is updated in the source sheet
+2. Power Query refreshes transformed data
+3. Pivot Tables update automatically
+4. KPI calculations refresh dynamically
+5. Dashboard visuals update instantly
+6. Slicers enable interactive analysis
 
 ---
 
-## Key Insights
+# Key Insights
 
-### Risk & Critical Care Insights
+## Admission Trend Insights
 
-* High-risk patients are predominantly concentrated in the **60–80 age group**
-* Low-risk patients are primarily observed between the **20–40 age range**
-* ICU patients exhibit significantly higher risk intensity compared to other wards
-* Approximately **35% of ICU cases belong to the high-risk category**
-* Blood group **B+** shows the highest concentration of high-risk and ICU patients
-* High-risk patients tend to experience longer hospitalization durations
+- Patient admissions increase steadily from March to August.
+- August records the highest patient volume.
+- Admissions gradually decline towards the end of the year.
+- Hospital workload fluctuates throughout the year, indicating seasonal admission patterns.
 
 ---
 
-### ICU & Extended Stay Insights
+## Risk Analysis Insights
 
-* ICU patients represent only **10% of total admissions**, yet require significantly higher clinical attention
-* ICU patients record an average hospitalization duration of **10 days**
-* Approximately **66% of ICU patients fall under the Extended Stay category**
-* ICU contributes disproportionately to prolonged hospitalization burden despite lower patient volume
-* Short-stay admissions are minimal in ICU, reflecting elevated patient severity levels
-
----
-
-### Wait-Time & Operational Insights
-
-* General Ward records the **highest number of high wait-time cases (1,975 patients)**
-* Operational congestion is concentrated more heavily in General Ward workflows
-* Lower-risk patients account for most operational waiting pressure
-* High wait-time cases are more frequently observed during weekdays
-* ICU contributes fewer high wait-time cases but requires operational attention due to patient severity
+- High-risk patients are predominantly concentrated in the 60–80 age group.
+- Low-risk patients are primarily observed between the 20–40 age range.
+- Risk severity increases with patient age.
+- ICU patients have a higher average risk score compared to other wards.
+- Approximately 35% of ICU patients belong to the High-Risk category.
+- Blood group B+ shows the highest concentration of High-Risk patients.
+- ICU admissions are also dominated by B+ blood group patients.
+- High-risk patients generally experience longer hospitalization durations.
 
 ---
 
-### Length of Stay Insights
+## ICU & Critical Care Insights
 
-* The majority of patients fall under the **Normal Stay category**
-* Extended Stay cases contribute significantly to operational resource utilization
-* Critical long-stay patients remain limited in volume but represent high-intensity care dependency
-* ICU records the highest concentration of Extended Stay patients
-* A relatively small segment of patients contributes disproportionately to hospital resource occupancy
-
----
-
-### Department-Level Insights
-
-* Patients without a specified referral department (“None”) account for the highest concentration of Extended Stay and Critical Long-Stay cases
-* General Practice contributes significantly to prolonged hospitalization cases
-* Cardiology records comparatively longer treatment durations
-* Gastroenterology maintains the highest patient satisfaction performance
-* Department-level hospitalization distribution remains operationally stable overall
+- ICU patients represent only 10% of total admissions.
+- ICU patients record an average hospitalization duration of 10 days.
+- Approximately 66% of ICU patients belong to the Extended Stay category.
+- ICU records the highest concentration of Extended Stay patients.
+- Short-stay admissions are minimal in ICU.
+- ICU handles fewer patients but significantly higher clinical severity.
+- Approximately 35% of ICU patients belong to the High-Risk category.
 
 ---
 
-### Satisfaction Insights
+## Wait-Time Insights
 
-* Gastroenterology records the highest patient satisfaction performance among all departments
-* Patient satisfaction remains relatively stable despite fluctuating admission volumes
-* Higher patient load does not always correspond to lower satisfaction levels
-
----
-
-## Interconnected Operational Insights
-
-### 1. Age-Driven Critical Care Dependency
-
-The analysis indicates a strong relationship between patient age, risk severity, and critical-care dependency. High-risk patients are predominantly concentrated within the 60–80 age group, while lower-risk patients are mostly observed between 20–40 years of age. This increasing risk severity with age directly contributes to higher ICU dependency, prolonged hospitalization durations, and extended recovery cycles among senior patients.
-
-As a result, senior-age patient groups contribute disproportionately to high-intensity healthcare utilization and long-duration hospital occupancy.
+- General Ward records the highest number of high wait-time cases (1,975 patients).
+- ICU contributes comparatively fewer high wait-time cases (371 patients).
+- High wait-time cases are concentrated primarily in General Ward operations.
+- Operational delays are more visible in high-volume wards than in critical-care wards.
 
 ---
 
-### 2. ICU Resource Intensity vs Patient Volume
+## Length of Stay Insights
 
-Although ICU patients account for only a small proportion of total admissions, ICU operations demonstrate significantly higher clinical severity and operational dependency. ICU patients exhibit higher average risk scores, longer hospitalization durations, and the highest concentration of Extended Stay cases.
-
-Nearly two-thirds of ICU patients fall under the Extended Stay category, indicating that ICU resource utilization is driven more by prolonged care intensity than patient volume. This suggests that even limited ICU occupancy can create substantial operational pressure on hospital resources, staffing, and bed availability.
-
----
-
-### 3. Operational Congestion Is Concentrated Outside ICU
-
-Despite ICU patients requiring higher clinical attention, the largest operational congestion is observed in General Ward workflows. General Ward handles the majority of low-risk and normal-stay patients but simultaneously records the highest number of high wait-time cases.
-
-This indicates that operational delays are being driven more by patient volume imbalance and workflow pressure rather than patient severity. Lower-risk patients contribute disproportionately to waiting burden, especially during weekday admission peaks.
+- Most patients fall under the Normal Stay category.
+- Extended Stay patients form the second-largest hospitalization segment.
+- Critical Long-Stay patients remain limited in count but require significant hospital resources.
+- ICU contributes disproportionately to prolonged hospitalization cases.
+- A relatively small group of patients accounts for a large share of hospital occupancy.
 
 ---
 
-### 4. Extended-Stay Patients Drive Resource Utilization
+## Ward-Level Insights
 
-Most patients fall within stable hospitalization ranges; however, a relatively small proportion of Extended Stay and Critical Long-Stay patients contribute disproportionately to hospital resource occupancy.
+### General Ward
 
-This extended hospitalization burden is heavily concentrated within ICU operations and unspecified referral cases, indicating that severe clinical dependency and inefficient referral allocation both contribute to prolonged patient retention.
+- Handles the largest patient population.
+- Records the highest operational workload.
+- Manages the largest share of Normal Stay patients.
+- Also records the highest number of high wait-time cases.
 
----
+### ICU
 
-### 5. Referral Inefficiencies May Be Increasing Prolonged Hospitalization
+- Handles fewer patients but significantly higher risk intensity.
+- Records the highest concentration of Extended Stay patients.
+- Contributes heavily to prolonged hospitalization burden.
 
-Patients categorized under unspecified referral departments (“None”) demonstrate the highest concentration of Extended Stay and Critical Long-Stay cases.
+### Private Ward
 
-This pattern may indicate operational inefficiencies in referral allocation, delayed diagnosis workflows, incomplete patient-routing processes, or potential data-quality inconsistencies.
-
----
-
-### 6. Critical-Care Burden Is Concentrated Within Specific Patient Groups
-
-The analysis reveals that critical-care dependency is not evenly distributed across the patient population. Senior-age, high-risk, and B+ blood group patients contribute disproportionately to ICU admissions and prolonged hospitalization patterns.
-
-This concentration indicates that hospital resource-intensive operations are being driven by a relatively limited but clinically severe patient segment.
+- Shows a relatively balanced stay distribution.
+- Faces lower prolonged-care pressure compared to ICU.
 
 ---
 
-### 7. Wait-Time Pressure and Patient Severity Follow Different Operational Patterns
+## Department-Level Insights
 
-The analysis shows that high wait-time pressure is concentrated primarily among lower-risk General Ward patients, while ICU patients experience lower waiting pressure but substantially longer treatment cycles.
-
-This indicates that hospital workflows operate under two distinct operational burdens:
-
-* High-volume workflow congestion
-* High-severity prolonged-care dependency
-
----
-
-### 8. Hospitalization Duration Reflects Severity-Based Recovery Cycles
-
-Length-of-stay distribution patterns demonstrate that hospitalization duration is strongly linked to patient severity and ward dependency. ICU and high-risk patients consistently exhibit longer treatment cycles, while General Ward patients show comparatively stable discharge patterns.
-
-This indicates that hospitalization duration is heavily influenced by critical-care dependency, recovery complexity, and patient severity levels.
+- Patients without a specified referral department ("None") account for the highest concentration of Extended Stay and Critical Long-Stay cases.
+- General Practice contributes significantly to prolonged hospitalization cases.
+- Orthopedics demonstrates moderate long-duration recovery cycles.
+- Cardiology records slightly longer treatment durations.
+- Neurology shows relatively stable hospitalization distribution.
+- Renal and Gastroenterology maintain lower hospitalization intensity.
+- Gastroenterology records the highest patient satisfaction score.
 
 ---
 
-## Actionable Business Recommendations
+## Satisfaction Insights
 
-### 1. ICU Resource Optimization Strategy
-
-* Increase monitoring and resource planning for Extended Stay ICU patients
-* Improve critical-care bed allocation efficiency
-* Strengthen prolonged-care management workflows
-
-**Reason:**
-ICU patients contribute disproportionately to prolonged hospitalization durations and resource utilization despite lower admission volume.
+- Gastroenterology records the highest satisfaction score among all departments.
+- Patient satisfaction remains relatively stable across departments.
+- Higher patient volume does not necessarily result in lower satisfaction levels.
 
 ---
 
-### 2. General Ward Congestion Reduction
+# Interconnected Insights
 
-* Optimize patient flow management in General Ward
-* Improve operational scheduling during peak weekday admissions
-* Introduce workload-balancing strategies for high-volume patient intake
+### Age and Risk Relationship
 
-**Reason:**
-General Ward experiences the highest wait-time burden and operational congestion despite handling predominantly low-risk patients.
+The analysis shows a clear relationship between age and patient risk. As patient age increases, the concentration of high-risk cases also increases. Senior patients contribute significantly to ICU admissions and longer hospital stays.
 
----
+### ICU Burden Comes from Severity, Not Volume
 
-### 3. Senior High-Risk Patient Monitoring
+Although ICU accounts for only 10% of total admissions, it contains a much higher proportion of High-Risk and Extended Stay patients. This indicates that ICU workload is driven by patient severity rather than admission volume.
 
-* Implement proactive monitoring for senior-age high-risk patients
-* Prioritize early intervention programs for critical-risk groups
-* Improve preventive healthcare tracking for vulnerable demographics
+### General Ward Faces the Largest Operational Pressure
 
-**Reason:**
-Senior-age patients contribute disproportionately to ICU dependency and prolonged hospitalization patterns.
+General Ward handles the largest number of patients and records the highest number of high wait-time cases. This suggests that operational pressure is primarily driven by patient volume.
 
----
+### Extended Stay Patients Consume More Resources
 
-### 4. Extended Stay Management Strategy
+While most patients fall under Normal Stay, a relatively small group of Extended Stay and Critical Long-Stay patients contributes significantly to bed occupancy and resource utilization.
 
-* Create specialized monitoring workflows for Extended Stay patients
-* Improve discharge planning and recovery coordination
-* Monitor long-duration occupancy trends more proactively
+### Referral Process May Need Attention
 
-**Reason:**
-A relatively small segment of patients contributes disproportionately to operational occupancy and prolonged resource utilization.
+Patients with no specified referral department show the highest concentration of Extended Stay and Critical Long-Stay cases. This may indicate referral-management inefficiencies or data-quality issues.
 
 ---
 
-### 5. Referral Workflow Optimization
+# Business Recommendations
 
-* Improve referral tracking and department allocation accuracy
-* Reduce dependency on unspecified referral classifications
-* Strengthen patient-routing workflows and operational documentation
+## 1. Improve ICU Resource Planning
 
-**Reason:**
-Unspecified referral categories show unusually high concentrations of Extended Stay and Critical Long-Stay cases.
+- Monitor Extended Stay patients more closely
+- Improve ICU bed allocation planning
+- Track prolonged-care cases proactively
 
----
-
-### 6. Wait-Time Optimization Strategy
-
-* Introduce operational balancing during weekday peak loads
-* Improve queue and patient handling efficiency in General Ward operations
-* Strengthen staffing allocation during high-volume operational periods
-
-**Reason:**
-Weekday admission pressure contributes significantly to operational delays and wait-time escalation.
+**Reason:** ICU patients stay longer and consume a larger share of hospital resources.
 
 ---
 
-## Success Measurement (Expected Impact)
+## 2. Reduce General Ward Congestion
 
-* Improved ICU resource utilization and prolonged-care management
-* Reduction in operational congestion and patient wait times
-* Better identification and monitoring of high-risk patient groups
-* Enhanced visibility into hospitalization duration and patient-flow behavior
-* Improved operational decision-making through dynamic healthcare KPI reporting
-* Better patient-routing and referral allocation efficiency
-* Reduced manual reporting effort with automated and refreshable dashboard workflows
+- Improve patient-flow management
+- Optimize staffing during busy periods
+- Reduce operational delays in high-volume wards
+
+**Reason:** General Ward experiences the highest patient volume and wait-time burden.
+
+---
+
+## 3. Focus on Senior High-Risk Patients
+
+- Introduce early-risk identification programs
+- Monitor elderly patients more proactively
+- Prioritize preventive healthcare measures
+
+**Reason:** Senior patients contribute heavily to ICU demand and prolonged hospitalization.
+
+---
+
+## 4. Improve Extended Stay Management
+
+- Track prolonged-stay patients regularly
+- Strengthen discharge planning
+- Monitor long-duration occupancy trends
+
+**Reason:** A small number of patients occupy hospital resources for extended periods.
+
+---
+
+## 5. Strengthen Referral Tracking
+
+- Improve referral documentation
+- Reduce unspecified referral classifications
+- Standardize patient-routing processes
+
+**Reason:** Unspecified referrals show the highest concentration of prolonged hospitalization cases.
+
+---
+
+## Dashboard Highlights
+
+- Built a fully interactive Healthcare Operational Analysis Dashboard in Excel.
+- Created custom Risk Score, Risk Category, Age Group, and Length of Stay segmentation logic.
+- Automated reporting using Power Query and dynamic Pivot Tables.
+- Designed KPI monitoring for patient admissions, satisfaction, and operational performance.
+- Developed interactive filtering using slicers.
+- Built a refreshable dashboard that updates automatically when new data is added.
+
+---
+
+## Project Outcome
+
+This dashboard helps identify:
+
+- High-risk patient groups
+- ICU workload patterns
+- Extended Stay dependency
+- Wait-time bottlenecks
+- Department performance
+- Hospitalization trends
+- Patient satisfaction performance
+
+The dashboard provides a centralized view of hospital operations and supports data-driven healthcare decision-making.
 
 ---
 
 ## Executive Summary
 
-Hospital operational analysis indicates that healthcare resource pressure is being driven by two parallel operational burdens: high-volume workflow congestion within General Ward operations and prolonged treatment dependency within ICU environments. While lower-risk patients contribute most of the operational waiting pressure, senior-age and high-risk patients contribute disproportionately to ICU occupancy, Extended Stay cases, and prolonged hospitalization durations. The findings suggest that improving workflow efficiency, referral accuracy, and proactive monitoring of high-risk demographic groups could significantly enhance hospital operational performance, patient-flow efficiency, and critical-care resource utilization.
+The analysis shows that hospital operations face two major challenges: managing high patient volume in the General Ward and handling prolonged-care cases in the ICU. While General Ward experiences the highest operational workload and wait-time pressure, ICU patients require significantly more care due to higher risk levels and longer hospital stays.
+
+The findings highlight opportunities to improve patient-flow management, ICU resource planning, referral tracking, and monitoring of high-risk patient groups to enhance overall hospital efficiency.
