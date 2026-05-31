@@ -154,6 +154,15 @@ Built automated KPI calculations using Pivot Tables and Excel formulas.
 
 ---
 
+
+Automated Data Pipeline
+Built an end-to-end Excel-based reporting pipeline.
+Raw patient data is ingested through Power Query.
+Automated data cleaning and transformation processes are applied.
+Dynamic categories and calculated fields are generated automatically.
+Refreshed data flows into Pivot Tables, KPIs, and dashboard visuals.
+Enables scalable and refreshable healthcare reporting with minimal manual intervention.
+
 ## KPI Tracking
 
 The dashboard tracks:
