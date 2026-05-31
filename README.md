@@ -22,6 +22,24 @@ The objective of this analysis is to understand hospital operations and improve 
 
 ---
 
+# 🔄 Data Cleaning & Transformation (Power Query)
+
+Data cleaning and transformation were performed using Power Query to create a semi-automated reporting workflow.
+
+### Cleaning Steps Performed
+
+- Removed duplicate records.
+- Corrected invalid and inconsistent date formats.
+- Converted text-based dates into proper date format.
+- Standardized Gender values.
+- Standardized Department names.
+- Standardized Ward Type values.
+- Standardized Payment Method entries.
+- Fixed inconsistencies across categorical fields.
+- Created Full Name by combining First Name and Last Name.
+- Extracted Year, Month, and Day from Admission Date.
+- Validated and corrected formatting issues.
+
 ## Dashboard Overview
 
 The dashboard was designed as an interactive healthcare analytics solution focused on patient admissions, risk analysis, hospitalization trends, operational performance, and patient satisfaction.
