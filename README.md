@@ -155,7 +155,7 @@ Built automated KPI calculations using Pivot Tables and Excel formulas.
 ---
 Descriptive Statistics Analysis
 
-Applied mean, median, and mode analysis to evaluate patient wait times, hospitalization duration, and identify the most common blood groups, ward types, age groups, and payment methods.
+Applied descriptive statistical analysis using mean, median, and mode to evaluate patient wait times and hospitalization duration, identify the most common blood groups, ward types, age groups, and payment methods, and analyze Age vs Risk Score and Risk Score vs Length-of-Stay trends to uncover patient risk patterns.
 
 
 Automated Data Pipeline
