@@ -153,6 +153,9 @@ Created wait-time categories for operational analysis.
 Built automated KPI calculations using Pivot Tables and Excel formulas.
 
 ---
+Descriptive Statistics Analysis
+
+Applied mean, median, and mode analysis to evaluate patient wait times, hospitalization duration, and identify the most common blood groups, ward types, age groups, and payment methods.
 
 
 Automated Data Pipeline
