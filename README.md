@@ -210,6 +210,11 @@ The dashboard tracks:
 - Formula-Based Category Creation
 
 ---
+### Patient Flow Forecasting
+
+* Forecasted next-month patient admissions using Running Average analysis on historical admission trends.
+* Estimated future patient volume to support hospital capacity planning and resource allocation.
+
 
 ## Dynamic Reporting Workflow
 
