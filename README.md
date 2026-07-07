@@ -1,7 +1,7 @@
 # Dynamic Healthcare Operational Analysis Dashboard & Automated Reporting
 
 ---
-
+ 
 ## Problem Statement
 
 The objective of this project was to analyze hospital operational and patient management data to identify patient risk patterns, hospitalization trends, ICU workload, operational bottlenecks, and patient-flow challenges. The analysis helps understand how hospital resources are utilized and where operational improvements can be made through data-driven decision-making.
