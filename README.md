@@ -161,36 +161,36 @@ Dynamic Pivot Tables · Interactive Slicers · Power Query–driven refresh · F
 ## Risk Patterns
 - High-risk patients are concentrated in the 71–80 age group, followed by 61–70; risk severity increases with age.
 - Low-risk patients are least represented in these older age groups.
-- High-risk patients generally have longer hospitalization durations.
+- High-risk patients generally have longer hospitalization durations. //cretical long stay ke baare m likhna h
 
 ## ICU & Critical Care
 - ICU accounts for only **10%** of total admissions but carries disproportionate severity:
   - ~**35%** of ICU patients are High Risk
   - Average ICU stay: **10 days**
-  - ~**66%** of ICU patients fall in the Extended Stay category (short stays are minimal)
+  - ~**63%** of ICU patients fall in the Extended Stay category (short stays are minimal)
 - ICU pressure is driven by patient **severity**, not volume.
 
 ## Blood Group Patterns
-- **B+** has the highest patient volume overall and the largest share of High-Risk patients; it also dominates ICU admissions.
-- **O+** is the second-highest across risk categories.
-- Blood group distribution is otherwise fairly consistent across Low/Medium/High-Risk groups.
+- **O+** has the highest patient volume overall and the largest share of High-Risk patients. 
+- **B+** is the second-highest across risk categories;it also dominates ICU admissions. //addmission rate ni total icu ke patient h
+- Blood group distribution is otherwise fairly consistent across Low/Medium/High-Risk groups.//check this
 
 ## Wait-Time Pressure
-- General Ward has the most high-wait-time cases (**1,975**) vs. ICU's **371**.
+- General Ward has the most high-wait-time cases (**1,986**) vs. ICU's **360**.
 - The "None" referral category and General Practice see the highest concentrations of high-wait-time patients.
 - Medium-Risk patients contribute the most high-wait-time cases (**2,136**); High-Risk contributes **1,195**.
 - **~87%** of High-Risk patients experience High Wait-Time; **~57%** of Medium-Risk patients do.
 
 ## Length of Stay
-- Most patients fall under Normal Stay; Extended Stay is the second-largest segment.
+- Most patients fall under Normal Stay; short Stay is the second-largest segment.
 - Critical Long-Stay patients are few but resource-intensive.
 - **~50%** of High-Risk patients are Extended Stay, vs. only **~17%** of Medium-Risk (**~56%** of Medium-Risk are Normal Stay).
 - A small patient group accounts for a disproportionate share of hospital occupancy.
 
 ## Ward-Level Patterns
 - **General Ward:** Largest patient population and workload; highest number of Normal Stay patients and high-wait-time cases.
-- **ICU:** Fewer patients but highest concentration of Extended Stay and prolonged hospitalization.
-- **Private Ward:** Balanced stay distribution; lower prolonged-care pressure than ICU.
+- **ICU:** Fewer patients but highest concentration of Extended Stay and prolonged hospitalization.//critcal stay ignore general 515 hai
+- **Private Ward:** Balanced stay distribution; lower prolonged-care pressure than ICU.//check
 
 ## Department-Level Patterns
 - The "None" referral category has the highest concentration of High-Risk, Extended Stay, and Critical Long-Stay patients.
