@@ -161,7 +161,8 @@ Dynamic Pivot Tables · Interactive Slicers · Power Query–driven refresh · F
 ## Risk Patterns
 - High-risk patients are concentrated in the 71–80 age group, followed by 61–70; risk severity increases with age.
 - Low-risk patients are least represented in these older age groups.
-- High-risk patients generally have longer hospitalization durations. //cretical long stay ke baare m likhna h
+- High-risk patients generally have longer hospitalization durations — 50% fall into Extended Stay (vs 17% of Medium-Risk and just 2% of Low-Risk), and High-Risk patients are also disproportionately represented in Critical Long Stay cases (3.84%, compared to 1.73% for Medium-Risk and only 0.12% for Low-Risk) — nearly 32x higher than Low-Risk patients.
+- High-Risk concentration is fairly close across departments (12.9%–16.1% range) — General Practice has the highest share (16.14%), followed by Physiotherapy (15.94%) and Cardiology (15.73%), while Gastroenterology has the lowest (12.92%). The "None" (unspecified referral) group sits mid-range at 14.93% — it is not the highest, despite having the largest patient volume. Variation is more pronounced in the Low/Medium-Risk splits: Physiotherapy stands out with the lowest Low-Risk share (38.77%) and highest Medium-Risk share (45.29%), while Orthopedics has the highest Low-Risk share (46.23%).
 
 ## ICU & Critical Care
 - ICU accounts for only **10%** of total admissions but carries disproportionate severity:
@@ -171,9 +172,10 @@ Dynamic Pivot Tables · Interactive Slicers · Power Query–driven refresh · F
 - ICU pressure is driven by patient **severity**, not volume.
 
 ## Blood Group Patterns
-- **O+** has the highest patient volume overall and the largest share of High-Risk patients. 
-- **B+** is the second-highest across risk categories;it also dominates ICU admissions.and the largest share of High-Risk patients.  //addmission rate ni total icu ke patient h
-- Blood group distribution is otherwise fairly consistent across Low/Medium/High-Risk groups.//check this
+ - O+ has the highest patient volume overall (2,747 patients).
+ - By raw count, B+ has the highest number of High-Risk patients (403), followed by O+ (396) — B+ also leads in ICU admissions (271 vs O+'s 243).
+ - However, by percentage within each blood group, O- has the highest High-Risk rate (~19%), even though its overall volume is small — B+ (~16%) and A+ (~15%) follow. This means O- carries proportionally more risk per patient despite fewer total patients.
+ -Blood group distribution is otherwise fairly consistent — most groups have a similar High-Risk share (roughly 13–15%), except O- which stands out at ~19%.
 
 ## Wait-Time Pressure
 - General Ward has the most high-wait-time cases (**1,986**) vs. ICU's **360**.
@@ -193,8 +195,10 @@ Dynamic Pivot Tables · Interactive Slicers · Power Query–driven refresh · F
 - **Private Ward:** Balanced stay distribution; lower prolonged-care pressure than ICU.//check
 
 ## Department-Level Patterns
-- The "None" referral category has the highest concentration of High-Risk, Extended Stay, and Critical Long-Stay patients.
-- General Practice ranks second in High-Risk concentration and contributes significantly to ICU admissions and prolonged stays.
+ - General Practice has the highest High-Risk concentration (16.14%) among departments, followed by Physiotherapy (15.94%) and Cardiology (15.73%); Gastroenterology has the lowest (12.92%).
+ - The "None" (unspecified referral) category has the largest patient volume (58% of all patients) and therefore contributes the most raw ICU admissions and Extended Stay cases — but its High-Risk rate (14.93%) is actually mid-range, not the highest.
+Orthopedics shows moderate long-duration recovery; Cardiology slightly longer treatment durations; Neurology is relatively stable.
+Renal and Gastroenterology have lower hospitalization intensity.
 - Orthopedics shows moderate long-duration recovery; Cardiology slightly longer treatment durations; Neurology is relatively stable.
 - Renal and Gastroenterology have lower hospitalization intensity.
 - **Gastroenterology has the highest patient satisfaction score**, and satisfaction stays fairly stable across departments — higher volume doesn't necessarily mean lower satisfaction.
@@ -205,7 +209,7 @@ Dynamic Pivot Tables · Interactive Slicers · Power Query–driven refresh · F
 
 - **Age drives resource consumption:** The 61–80 age bracket dominates High/Medium-Risk categories and is more likely to need ICU care and longer stays.
 - **High-Risk patients strain multiple fronts at once:** 50% land in Extended Stay and 87% in High Wait-Time — simultaneously affecting clinical workload, bed occupancy, and delays.
-- **ICU burden comes from severity, not volume:** ICU accounts for only 10% of total admissions, yet 35% of ICU patients are High Risk, average ICU stay is 10 days, and 66% fall in Extended Stay — showing ICU pressure is driven by patient severity rather than patient count.
+- **ICU burden comes from severity, not volume:** ICU accounts for only 10% of total admissions, yet 35% of ICU patients are High Risk, average ICU stay is 10 days, and 63% fall in Extended Stay — showing ICU pressure is driven by patient severity rather than patient count.
 - **Referral gaps concentrate pressure:** The "None" referral category and General Practice repeatedly show up across High-Risk, ICU, Extended Stay, and High-Wait-Time cases — suggesting workload is concentrated in a narrow set of referral pathways rather than spread evenly.
 - **Risk severity and length of stay move together:** As risk rises, so does hospitalization duration (50% of High-Risk vs. 17% of Medium-Risk in Extended Stay).
 
