@@ -172,7 +172,7 @@ Dynamic Pivot Tables · Interactive Slicers · Power Query–driven refresh · F
 
 ## Blood Group Patterns
 - **O+** has the highest patient volume overall and the largest share of High-Risk patients. 
-- **B+** is the second-highest across risk categories;it also dominates ICU admissions. //addmission rate ni total icu ke patient h
+- **B+** is the second-highest across risk categories;it also dominates ICU admissions.and the largest share of High-Risk patients.  //addmission rate ni total icu ke patient h
 - Blood group distribution is otherwise fairly consistent across Low/Medium/High-Risk groups.//check this
 
 ## Wait-Time Pressure
